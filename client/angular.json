@@ -50,7 +50,7 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
-              "src/_redirects"
+              "src/_redirects.txt"
             ],
             "styles": [
               "src/styles.css",
