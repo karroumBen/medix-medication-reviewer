@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
         <div class="w-auto">
           <div class="flex flex-wrap items-center">
             <div class="w-auto lg:block">
-              <a href="/home" class="text-2xl font-bold">Medi<span class="text-white bg-gray-800 px-3 pb-1 rounded-lg border-2">X</span></a>
+              <a [routerLink]="['/home']" class="text-2xl font-bold">Medi<span class="text-white bg-gray-800 px-3 pb-1 rounded-lg border-2">X</span></a>
             </div>
           </div>
         </div>
@@ -35,13 +35,13 @@ import { Router } from '@angular/router';
                       hover:bg-gray-50 focus:ring-4
                       focus:ring-gray-200
                       border rounded-full"
-                    href="/login"
+                      [routerLink]="['/login']"
                     data-config-id="auto-txt-5-2">Log In</a>
                   </div>
                   <div class="w-full md:w-auto p-2" *ngIf="!isLoggedIn">
                     <a
                       class="block w-full px-4 py-2.5 text-sm text-center text-white font-bold bg-blue-500 hover:bg-blue-600 focus:ring-4 focus:ring-blue-200 rounded-full"
-                      href="register">Register
+                      [routerLink]="['/register']">Register
                     </a>
                   </div>
 
