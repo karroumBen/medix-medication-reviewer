@@ -1,5 +1,5 @@
 export const environment = {
   production: true,
-  apiUrl: 'http://localhost:3000',
-  fileUploadUrl: 'http://localhost:3000/medications/images/'
+  apiUrl: 'https://medix-backend.onrender.com',
+  fileUploadUrl: 'https://medix-backend.onrender.com/medications/images/'
 };
