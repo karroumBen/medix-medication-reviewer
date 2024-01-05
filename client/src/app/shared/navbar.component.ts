@@ -24,7 +24,7 @@ import { Router } from '@angular/router';
                       font-bold bg-green-500
                       hover:bg-green-100
                       focus:ring-4 focus:ring-green-200
-                      border rounded-full" href="/medications/new" >New Medication
+                      border rounded-full" [routerLink]="['/medications', 'new']">New Medication
                     </a>
                   </div>
 
