@@ -7,12 +7,9 @@ COPY package.json ./
 RUN npm install
 
 COPY . .
-# Build Angular app with specified environment
-# Replace 'your-environment.ts' with the appropriate environment file name
 ARG ENV_FILE=environment.development.ts
 COPY ./src/environments/${ENV_FILE} ./src/environments/environment.ts
 
-# Build Angular app
 RUN npm run build --prod --configuration=development
 
 FROM nginx:latest

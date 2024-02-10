@@ -12,5 +12,4 @@ EXPOSE 3000
 
 COPY .env ./
 
-# Command to run Node.js backend
 CMD ["npm", "start"]
